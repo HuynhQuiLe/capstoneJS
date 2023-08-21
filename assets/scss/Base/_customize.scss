@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Hexaframe CF";
+  src: url("HexaframeCF-Bold.eot");
+  src: local("Hexaframe CF Bold"), local("HexaframeCF-Bold"),
+    url("HexaframeCF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("HexaframeCF-Bold.woff2") format("woff2"),
+    url("HexaframeCF-Bold.woff") format("woff"),
+    url("HexaframeCF-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* WHEY */
+@font-face {
+  font-family: "Whyte";
+  src: url("../../fonts/ABCWheyte/Whyte-Regular.eot");
+  src: local("Whyte Regular"), local("Whyte-Regular"),
+    url("Whyte-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Whyte-Regular.woff2") format("woff2"),
+    url("Whyte-Regular.woff") format("woff"),
+    url("Whyte-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte";
+  src: url("Whyte-ExtraLight.eot");
+  src: local("Whyte ExtraLight"), local("Whyte-ExtraLight"),
+    url("Whyte-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("Whyte-ExtraLight.woff2") format("woff2"),
+    url("Whyte-ExtraLight.woff") format("woff"),
+    url("Whyte-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte";
+  src: url("Whyte-Medium.eot");
+  src: local("Whyte Medium"), local("Whyte-Medium"),
+    url("Whyte-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Whyte-Medium.woff2") format("woff2"),
+    url("Whyte-Medium.woff") format("woff"),
+    url("Whyte-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte";
+  src: url("Whyte-Thin.eot");
+  src: local("Whyte Thin"), local("Whyte-Thin"),
+    url("Whyte-Thin.eot?#iefix") format("embedded-opentype"),
+    url("Whyte-Thin.woff2") format("woff2"),
+    url("Whyte-Thin.woff") format("woff"),
+    url("Whyte-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}

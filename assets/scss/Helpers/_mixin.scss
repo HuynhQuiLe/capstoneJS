@@ -1,0 +1,51 @@
+@mixin border() {
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+}
+
+@mixin fontHexa() {
+  font-family: "Hexaframe CF";
+}
+
+@mixin fontOpenSans() {
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin titleBlog() {
+  padding: 20px 10px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  h1 {
+    @include fontHexa();
+    color: $text-black !important;
+    font-size: 30px;
+    margin: 20px 0;
+    span {
+      &.dot {
+        color: $text-blue;
+      }
+    }
+  }
+
+  h2 {
+    @include fontOpenSans();
+    color: $text-black !important;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 25px;
+  }
+  svg {
+    width: 90px;
+    height: 20px;
+    path {
+      stroke: $text-blue;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      fill: none;
+    }
+  }
+}

@@ -4,10 +4,405 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Unknown® - Home Page</title>
+    <link
+      rel="shortcut icon"
+      href="https://uploads-ssl.webflow.com/645cf761f60657f1a3bfd6de/646b7b76d5f40e5af959a61c_UK-favicon.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <a href="./admin/views/index.html">ADMIN</a>
-    <a href="./customer/views/index.html">PRODUCT</a>
+    <div class="loader">
+      <div class="progress">
+        <div class="progress__bar">
+          <div class="progress__bar-overlay"></div>
+        </div>
+        <div class="progress__bottom">
+          <div class="progress__bottom-left">
+            <img
+              src="./assets/img/svg/loading-triangles.svg"
+              alt="loading-triangles"
+            />
+            <span>Loading - <span class="percent">20</span>%</span>
+          </div>
+          <div class="progress__bottom-right">
+            <div class="file-name"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="loading-audio-ring">
+        <div class="audio-ring">
+          <span></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="frame">
+      <div class="frame__line">
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+    </div>
+
+    <!-- side menu -->
+    <div
+      class="side-menu absolute top-[20px] left-[20px] w-[65px] h-full-screen rounded-tl-[10px] flex flex-col items-center justify-between"
+    >
+      <!-- Humbuger -->
+      <div
+        class="humburger w-[65px] h-[50px] flex items-center justify-center cursor-pointer hover:rounded-tl-[10px] hover:border hover:border-[1px] hover:border-black"
+        onclick="toggleMenu()"
+      >
+        <svg
+          id="humburgerIcon"
+          fill="none"
+          viewBox="0 0 27 6"
+          class="icon-burger w-[27px] block stroke-black"
+        >
+          <path d="M.867.711h25.634M.867 5.25h21.429"></path>
+        </svg>
+
+        <svg
+          id="crossIcon"
+          xmlns="http://www.w3.org/2000/svg"
+          view-box="0 0 12.82 12.28"
+          class="hidden"
+        >
+          <path
+            d="M12.82 12.16 8.34 7.91M0 0l4.56 4.32"
+            class="stroke-white stroke-2"
+          ></path>
+          <path d="M.34 12.28 12.54.22" class="stroke-white stroke-2"></path>
+        </svg>
+      </div>
+
+      <!-- logo -->
+      <div class="logo flex items-center justify-center w-[65px] text-center">
+        <a href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 54 102"
+            class="w-[40px]"
+          >
+            <path
+              fill="black"
+              fill-rule="evenodd"
+              d="M17.958 70.176c0 .873.708 1.581 1.581 1.581h2.799c.873 0 1.58.708 1.58 1.58V100.1c0 .873.709 1.58 1.582 1.58h2.799a1.58 1.58 0 0 0 1.58-1.58V73.338c0-.873.708-1.58 1.581-1.58h2.799a1.58 1.58 0 0 0 1.58-1.582V55.401c0-.873.709-1.581 1.582-1.581h14.83a1.58 1.58 0 0 0 1.58-1.58v-2.8a1.58 1.58 0 0 0-1.58-1.58h-14.83a1.58 1.58 0 0 1-1.581-1.581V31.503a1.58 1.58 0 0 0-1.581-1.58H31.46a1.58 1.58 0 0 1-1.58-1.581V1.58A1.58 1.58 0 0 0 28.298 0h-2.8a1.58 1.58 0 0 0-1.58 1.58v26.761a1.58 1.58 0 0 1-1.581 1.581h-2.799a1.58 1.58 0 0 0-1.58 1.581V46.28a1.58 1.58 0 0 1-1.582 1.58H1.581A1.58 1.58 0 0 0 0 49.44v2.8c0 .872.708 1.58 1.58 1.58h14.797c.873 0 1.581.708 1.581 1.58v14.776Zm7.537-40.286a1.58 1.58 0 0 0-1.58 1.58v14.804a1.58 1.58 0 0 1-1.581 1.581h-2.8a1.58 1.58 0 0 0-1.58 1.581v2.814c0 .873.708 1.58 1.58 1.58h2.8c.873 0 1.58.709 1.58 1.581v14.79c0 .873.708 1.58 1.581 1.58h2.8a1.58 1.58 0 0 0 1.58-1.58V55.397c0-.873.708-1.581 1.581-1.581h2.799a1.58 1.58 0 0 0 1.58-1.581v-2.788a1.58 1.58 0 0 0-1.58-1.58h-2.799a1.58 1.58 0 0 1-1.58-1.581V31.47a1.58 1.58 0 0 0-1.582-1.58h-2.799Z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Music wave -->
+      <div
+        class="audio-ring active relative top-0 left-0 translate-x-0 translate-y-0 w-[20px] h-[50px] mb-[10px]"
+        onclick="handleClickMusicIcon(event)"
+      >
+        <span></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- side bar -->
+    <div
+      id="side-bar"
+      class="absolute top-[20px] left-[20px] w-0 h-full-screen bg-black transition-all duration-200 ease-in-out overflow-hidden rounded-tl-[10px] rounded-bl-[10px] z-30 flex flex-col justify-between text-white uppercase"
+    >
+      <div class="flex text-white px-[16px] pt-[25px] pb-[16px] w-full">
+        <div class="w-[25%] text-ibm text-[5.6px]">
+          <p>discovery</p>
+        </div>
+        <div class="w-[75%]">
+          <div
+            class="text-whyte w-fit relative text-[40px] font-bold leading-[1.3] text-black"
+          >
+            <p>HOME</p>
+            <div
+              class="absolute h-[42px] w-[145px] bg-green -z-[1] top-[50%] -translate-y-[50%] -left-[12px] rounded-[2px]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                view-box="0 0 20 21"
+                class="absolute w-[15px] h-[15px] right-0 bottom-0"
+              >
+                <path
+                  fill="#000"
+                  d="M3.81 19.181c-.756.69-2.123 1.009-3.81 1.009h20V.226c0 1.029-1.085 2.527-1.652 3.09-.566.565-13.631 15.038-14.538 15.865Z"
+                ></path>
+              </svg>
+            </div>
+            <p
+              class="absolute text-ibm text-[5.6px] font-normal text-green -right-[35px] top-[5px]"
+            >
+              page <br />
+              001
+            </p>
+          </div>
+          <div class="relative w-fit text-black cursor-pointer group">
+            <a
+              href="./admin/views/index.html"
+              class="text-whyte w-fit relative text-[40px] font-bold leading-[1.3] text-white group-hover:text-black"
+              onmouseenter="handleHover(event, 'admin')"
+            >
+              admin
+            </a>
+
+            <div
+              class="absolute h-[42px] w-[160px] opacity-0 text-white bg-white -z-[1] -translate-y-[50%] top-[50%] -left-[12px] rounded-[2px] group-hover:opacity-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                view-box="0 0 20 21"
+                class="absolute w-[15px] h-[15px] right-0 bottom-0"
+              >
+                <path
+                  fill="#000"
+                  d="M3.81 19.181c-.756.69-2.123 1.009-3.81 1.009h20V.226c0 1.029-1.085 2.527-1.652 3.09-.566.565-13.631 15.038-14.538 15.865Z"
+                ></path>
+              </svg>
+              <p
+                class="absolute text-ibm text-[5.6px] font-normal text-white -right-[20px] top-0"
+              >
+                page <br />
+                002
+              </p>
+            </div>
+          </div>
+          <div class="relative w-fit text-black cursor-pointer group">
+            <a
+              href="./customer/views/index.html"
+              class="text-whyte w-fit relative text-[40px] font-bold leading-[1.3] text-white group-hover:text-black"
+              onmouseenter="handleHover(event, 'customer')"
+            >
+              Customer
+            </a>
+
+            <div
+              class="absolute h-[42px] w-[240px] opacity-0 text-white bg-white -z-[1] -translate-y-[50%] top-[50%] -left-[12px] rounded-[2px] group-hover:opacity-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                view-box="0 0 20 21"
+                class="absolute w-[15px] h-[15px] right-0 bottom-0"
+              >
+                <path
+                  fill="#000"
+                  d="M3.81 19.181c-.756.69-2.123 1.009-3.81 1.009h20V.226c0 1.029-1.085 2.527-1.652 3.09-.566.565-13.631 15.038-14.538 15.865Z"
+                ></path>
+              </svg>
+              <p
+                class="absolute text-ibm text-[5.6px] font-normal text-white -right-[20px] top-0"
+              >
+                page <br />
+                003
+              </p>
+            </div>
+          </div>
+
+          <div class="relative w-fit text-black cursor-pointer group">
+            <p
+              class="text-whyte w-fit relative text-[40px] font-bold leading-[1.3] text-white group-hover:text-black"
+              onmouseenter="handleHover(event, 'media')"
+            >
+              media
+            </p>
+
+            <div
+              class="absolute h-[42px] w-[163px] opacity-0 text-white bg-white -z-[1] -translate-y-[50%] top-[50%] -left-[12px] rounded-[2px] group-hover:opacity-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                view-box="0 0 20 21"
+                class="absolute w-[15px] h-[15px] right-0 bottom-0"
+              >
+                <path
+                  fill="#000"
+                  d="M3.81 19.181c-.756.69-2.123 1.009-3.81 1.009h20V.226c0 1.029-1.085 2.527-1.652 3.09-.566.565-13.631 15.038-14.538 15.865Z"
+                ></path>
+              </svg>
+              <p
+                class="absolute text-ibm text-[5.6px] font-normal text-white -right-[20px] top-0"
+              >
+                page <br />
+                004
+              </p>
+            </div>
+          </div>
+
+          <div class="relative w-fit text-black cursor-pointer group">
+            <p
+              class="text-whyte w-fit relative text-[40px] font-bold leading-[1.3] text-white group-hover:text-black"
+              onmouseenter="handleHover(event, 'gallery')"
+            >
+              gallery
+            </p>
+
+            <div
+              class="absolute h-[42px] w-[212px] opacity-0 text-white bg-white -z-[1] -translate-y-[50%] top-[50%] -left-[12px] rounded-[2px] group-hover:opacity-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                view-box="0 0 20 21"
+                class="absolute w-[15px] h-[15px] right-0 bottom-0"
+              >
+                <path
+                  fill="#000"
+                  d="M3.81 19.181c-.756.69-2.123 1.009-3.81 1.009h20V.226c0 1.029-1.085 2.527-1.652 3.09-.566.565-13.631 15.038-14.538 15.865Z"
+                ></path>
+              </svg>
+              <p
+                class="absolute text-ibm text-[5.6px] font-normal text-white -right-[20px] top-0"
+              >
+                page <br />
+                005
+              </p>
+            </div>
+          </div>
+
+          <div class="relative w-fit text-black cursor-pointer group">
+            <p
+              class="text-whyte w-fit relative text-[40px] font-bold leading-[1.3] text-white group-hover:text-black"
+              onmouseenter="handleHover(event, 'about')"
+            >
+              about
+            </p>
+
+            <div
+              class="absolute h-[42px] w-[170px] opacity-0 text-white bg-white -z-[1] -translate-y-[50%] top-[50%] -left-[12px] rounded-[2px] group-hover:opacity-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000"
+                view-box="0 0 20 21"
+                class="absolute w-[15px] h-[15px] right-0 bottom-0"
+              >
+                <path
+                  fill="#000"
+                  d="M3.81 19.181c-.756.69-2.123 1.009-3.81 1.009h20V.226c0 1.029-1.085 2.527-1.652 3.09-.566.565-13.631 15.038-14.538 15.865Z"
+                ></path>
+              </svg>
+              <p
+                class="absolute text-ibm text-[5.6px] font-normal text-white -right-[20px] top-0"
+              >
+                page <br />
+                006
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-ibm">
+        <div class="p-[16px] flex border-t-[1px] border-line-light">
+          <p class="w-[25%] text-[5.6px]">connect</p>
+          <div class="w-[75%] text-[7.9px]">
+            <p class="mb-[3px]">TWITTER</p>
+            <p>discord</p>
+          </div>
+        </div>
+        <div class="p-[16px] flex border-t-[1px] border-line-light">
+          <p class="w-[25%] text-[5.6px]">buy on</p>
+
+          <div class="w-[75%] text-[7.9px] flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              view-box="0 0 17 15"
+              class="w-[16px] h-[16px] mr-2"
+            >
+              <path
+                d="m.982 8.619.054-.08 3.463-5.408c.053-.08.16-.08.213.027.586 1.305 1.065 2.904.852 3.916-.106.426-.373.985-.692 1.492a.58.58 0 0 1-.133.213c-.027.026-.054.053-.107.053h-3.57c-.08-.027-.133-.133-.08-.213Z"
+              ></path>
+              <path
+                d="M16.41 9.633v.852c0 .054-.027.08-.08.107-.266.106-1.199.533-1.572 1.065-.985 1.359-1.731 3.304-3.383 3.304H4.449C1.998 14.96 0 12.963 0 10.485v-.08c0-.053.053-.106.107-.106h3.889c.08 0 .133.08.133.133-.027.24.027.506.133.746.24.48.72.746 1.226.746h1.918v-1.492H5.514c-.106 0-.16-.107-.106-.187a.377.377 0 0 0 .08-.106c.186-.266.426-.64.692-1.092.187-.293.347-.64.48-.96.026-.053.053-.106.08-.186.026-.106.08-.213.106-.293l.08-.24a4.43 4.43 0 0 0 .08-.879c0-.106 0-.24-.026-.373 0-.133-.027-.266-.027-.4 0-.106-.027-.239-.053-.346a3.772 3.772 0 0 0-.107-.532l-.027-.054c-.026-.106-.053-.24-.106-.346a9.942 9.942 0 0 0-.373-1.065l-.16-.4c-.08-.187-.16-.373-.24-.533-.026-.08-.08-.133-.106-.213-.027-.08-.08-.16-.107-.24l-.08-.16-.24-.426c-.026-.053.027-.133.08-.106l1.466.4.186.052.213.054.08.026V.948c0-.426.346-.772.746-.772.213 0 .4.08.533.213s.213.32.213.533V2.2l.16.054s.026 0 .026.026c.027.027.08.08.16.133.053.054.107.107.187.16.133.107.32.267.506.427.053.053.106.08.133.133.24.213.506.48.773.772.08.08.133.16.213.24.08.08.133.187.213.266.08.107.186.24.266.347.027.053.08.106.107.186.106.16.186.32.293.48.026.08.08.16.106.24.107.213.187.426.213.665a.29.29 0 0 1 .027.134.52.52 0 0 1 .027.213c.026.24 0 .453-.027.692-.027.107-.053.187-.08.293-.026.08-.053.187-.106.293-.08.187-.187.373-.293.56-.027.053-.08.133-.134.213-.053.08-.106.133-.133.213-.053.08-.133.16-.186.24-.054.08-.107.16-.187.24-.08.106-.186.213-.266.32-.053.053-.107.133-.187.186-.053.053-.106.133-.186.186-.08.08-.16.16-.24.213l-.16.134c-.026.026-.053.026-.08.026H8.844v1.492h1.465c.32 0 .64-.107.88-.32.08-.08.452-.4.905-.879.027-.026.027-.026.054-.026L16.276 9.5c.08-.027.133.053.133.133Z"
+              ></path>
+            </svg>
+            <p>openea</p>
+          </div>
+        </div>
+        <div class="p-[16px] flex border-t-[1px] border-line-light">
+          <p class="w-[25%] text-[5.6px]">US-EN</p>
+          <p class="w-[75%] text-[7.9px] text-gray-500">© 2023</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div
+      class="overlay absolute -top-[20px] -left-[20px] w-[100vw] bg-white opacity-80 z-[25] h-[100vh]"
+    ></div> -->
+
+    <!-- audio -->
+    <div class="hidden">
+      <audio
+        class="intro-music"
+        loop
+        src="./assets/audio/INTROx_song.mp3"
+      ></audio>
+      <audio
+        class="text-animation-effect"
+        src="./assets/audio/FX_text_animation_loop.mp3"
+        type="audio/ogg"
+      ></audio>
+      <audio
+        class="menu-open-effect"
+        type="audio/ogg"
+        src="./assets/audio/UI_menu_OPEN.mp3"
+      ></audio>
+      <audio
+        class="menu-close-effect"
+        type="audio/ogg"
+        src="./assets/audio/UI_menu_CLOSE.mp3"
+      ></audio>
+    </div>
+
+    <div class="hidden force">
+      <div class="force-box min-w-[300px] top-[50px] left-[50%]">
+        <p>
+          Để trải nghiệm người dùng <b>tối ưu nhất</b>, hãy chắc chắn bạn đang
+          <b>bật âm lượng</b>.
+        </p>
+        <button class="bg-gray-300" onclick="handleForceMusic()">OK</button>
+      </div>
+    </div>
+    <script src="./assets/js/loader.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              green: "#c0fb51",
+            },
+            height: {
+              "full-screen": "calc(100vh - 40px)",
+              "main-content": "calc( 100vh - 90px )",
+            },
+            maxWidth: {
+              "main-content": "calc( 100vw - 105px )",
+            },
+            objectPosition: {
+              "center-bottom": "60% 35%",
+            },
+          },
+        },
+      };
+    </script>
+
+    <script src="./assets/js/menuTonggle.js"></script>
+    <script src="./assets/js/hackyText.js"></script>
+    <script src="./assets/js/handleMusicIcon.js"></script>
   </body>
 </html>

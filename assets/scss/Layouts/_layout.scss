@@ -1,0 +1,25 @@
+.container {
+  width: 1140px;
+  margin: auto;
+  position: relative;
+  padding: 30px 0;
+  overflow-x: hidden;
+  &.main {
+    @include border;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(1140px / 3);
+      height: 100%;
+      @include border;
+      z-index: -1;
+    }
+  }
+}
+
+.container-padding {
+  padding: 0 15px;
+}

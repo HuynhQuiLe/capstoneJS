@@ -1,0 +1,40 @@
+.side-menu {
+  &.active {
+    left: 405px;
+    background-color: $text-black;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    border-left: 1px solid $border-color;
+    transition: all 0.2s ease-in-out;
+    .humburger {
+      #crossIcon {
+        display: block;
+        width: 15px;
+        height: 15px;
+        stroke: white;
+      }
+      border-bottom: 1px solid $border-color;
+      #humburgerIcon {
+        display: none;
+      }
+      &:hover {
+        border: none;
+        border-bottom: 1px solid $border-color;
+      }
+    }
+
+    svg {
+      stroke: $text-white;
+      path {
+        fill: $text-white;
+      }
+    }
+    .audio-ring {
+      span {
+        background-color: $text-white;
+      }
+    }
+  }
+}

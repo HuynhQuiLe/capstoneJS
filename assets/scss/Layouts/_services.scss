@@ -1,0 +1,31 @@
+.services {
+  .services__list {
+    &.row {
+      margin: 0;
+    }
+    .services__item {
+      h3 {
+        font-size: 22px;
+      }
+      .icon-service {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 40px;
+          height: 40px;
+          background-color: $text-blue;
+          opacity: 0.3;
+          border-radius: 50%;
+          bottom: -5px;
+          right: -5px;
+          z-index: -1;
+        }
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
