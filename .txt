@@ -1,0 +1,127 @@
+[
+ {
+  "id": "1",
+  "name": "iphoneX",
+  "price": 1000,
+  "screen": "screen 68",
+  "backCamera": "2 camera 12 MP",
+  "frontCamera": "7 MP",
+  "img": "https://cdnimg.vietnamplus.vn/uploaded/izhsa/2019_02_05/iphonex54.jpg",
+  "desc": "Thiết kế mang tính đột phá",
+  "type": "Apple"
+ },
+ {
+  "id": "2",
+  "name": "Samsung Galaxy M51 ",
+  "price": 1500,
+  "screen": "screen 69",
+  "backCamera": " Chính 64 MP & Phụ 12 MP, 5 MP, 5 MP",
+  "frontCamera": " 32 MP",
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTif1-ypAnv_gRIGlctt5QTEa2IeCE3U7VByg&usqp=CAU",
+  "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+  "type": "Samsung"
+ },
+ {
+  "id": "3",
+  "name": "Samsung Galaxy M22",
+  "price": 1290,
+  "screen": "screen 70",
+  "backCamera": "Chính 12 MP & Phụ 64 MP, 12 MP",
+  "frontCamera": " 32 MP",
+  "img": "https://cdn.tgdd.vn/Products/Images/42/217536/samsung-galaxy-m51-trang-new-600x600-600x600.jpg",
+  "desc": "Thiết kế mang tính đột phá",
+  "type": "Samsung"
+ },
+ {
+  "id": "4",
+  "name": "iphone 11",
+  "price": 999,
+  "screen": "screen 54",
+  "backCamera": "Camera: Chính 12 MP & Phụ 64 MP, 12 MP",
+  "frontCamera": "32 MP",
+  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFqSILlOqQ6RYDcQx5XeixK1bMleADXtd3uA&usqp=CAU",
+  "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+  "type": "Apple"
+ },
+ {
+  "id": "5",
+  "name": "iphone 14 Pro Max",
+  "price": 1290,
+  "screen": "screen 54",
+  "backCamera": "Camera: Chính 12 MP & Phụ 64 MP, 12 MP",
+  "frontCamera": "32 MP",
+  "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-2-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753617559",
+  "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+  "type": "Apple"
+ },
+ {
+  "id": "6",
+  "name": "Samsung Galaxy S23 Ultra",
+  "price": 999,
+  "screen": "screen 54",
+  "backCamera": "Camera: Chính 12 MP & Phụ 64 MP, 12 MP",
+  "frontCamera": "32 MP",
+  "img": "https://media.cnn.com/api/v1/images/stellar/prod/230308120048-underscored-galaxy-s23-ultra-camera-lead.jpg?c=original",
+  "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+  "type": "Samsung"
+ },
+ {
+  "id": "7",
+  "name": "iPad Pro 12,9",
+  "price": 1199,
+  "screen": "screen 54",
+  "backCamera": "Camera: Chính 12 MP & Phụ 64 MP, 12 MP",
+  "frontCamera": "32 MP",
+  "img": "https://cdn.pacifiko.com/image/cache/catalog/magic_keyboard_for_ipad_black_12.9in_PDP_CLES_1-484x484.jpg",
+  "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+  "type": "Apple"
+ },
+ {
+  "id": "8",
+  "name": "Samsung Tab S7 Plus",
+  "price": 1199,
+  "screen": "screen 54",
+  "backCamera": "Camera: Chính 12 MP & Phụ 64 MP, 12 MP",
+  "frontCamera": "32 MP",
+  "img": "https://mtsmart.vn/uploads/blog/danh-gia-samsung-tab-s7-plus-dau-tu-phan-cung-dinh-cao-220312110945.png",
+  "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+  "type": "Samsung"
+ }
+ ,
+ {
+  "id": "9",
+  "name": "Samsung Galaxy Z Fold 4",
+  "price": 1199,
+  "screen": "screen 54",
+  "backCamera": "Camera: Chính 12 MP & Phụ 64 MP, 12 MP",
+  "frontCamera": "32 MP",
+  "img": "https://images.samsung.com/vn/smartphones/galaxy-z-fold4/images/galaxy-z-fold4_highlights_kv.jpg",
+  "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+  "type": "Samsung"
+ }
+ ,
+ {
+  "id": "10",
+  "name": "Iphone 13 Pro Max Màu Trắng",
+  "price": 1099,
+  "screen": "screen 54",
+  "backCamera": "Camera: Chính 12 MP & Phụ 64 MP, 12 MP",
+  "frontCamera": "32 MP",
+  "img": "https://imaxmobile.vn/media/data/iphone-13-pro-max-mau-trang-1.jpg",
+  "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+  "type": "Apple"
+ }
+ ,
+ {
+  "id": "11",
+  "name": "Galaxy Z Flip3 5G",
+  "price":769,
+  "screen": "screen 54",
+  "backCamera": "Camera: Chính 12 MP & Phụ 64 MP, 12 MP",
+  "frontCamera": "32 MP",
+  "img": "https://images.samsung.com/pk/smartphones/galaxy-z-flip3-5g/buy/zflip3_carousel_foldunfoldcombo_lavender_mo.jpg",
+  "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+  "type": "Samsung"
+ }
+]
+

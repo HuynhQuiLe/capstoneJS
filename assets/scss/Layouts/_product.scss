@@ -1,0 +1,26 @@
+.product {
+  column-count: 3;
+  column-gap: 0;
+  .item {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    position: relative;
+
+    .portfolio-item {
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    &:hover {
+      .overlay {
+        opacity: 1;
+        border-radius: 5px;
+      }
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+}

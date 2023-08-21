@@ -1,0 +1,57 @@
+.audio-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  cursor: pointer;
+  span {
+    display: inline-block;
+    width: 2px;
+    height: 8px;
+    background-color: #000;
+    animation: music 0.5s ease-in-out 0.2s infinite alternate;
+    &.line2 {
+      /* height: 28px; */
+      animation: music 0.5s ease-in-out 0.3s infinite alternate;
+    }
+    &.line3 {
+      animation: music 0.5s ease-in-out 0.4s infinite alternate;
+    }
+  }
+  &.unactive {
+    span {
+      animation: unset;
+      &.line2 {
+        /* height: 28px; */
+        animation: unset;
+      }
+      &.line3 {
+        animation: unset;
+      }
+    }
+  }
+}
+
+@keyframes music {
+  0% {
+    height: 2px;
+  }
+  40% {
+    height: 28px;
+  }
+  50% {
+    height: 18px;
+  }
+  80% {
+    height: 10px;
+  }
+  1000% {
+    height: 5px;
+  }
+}

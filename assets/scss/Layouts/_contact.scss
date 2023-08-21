@@ -1,0 +1,13 @@
+.contact {
+  .contact-wrapper {
+    &.row {
+      margin: 0;
+      form {
+        button {
+          padding: 10px 15px;
+          width: 200px;
+        }
+      }
+    }
+  }
+}

@@ -4,9 +4,771 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="https://uploads-ssl.webflow.com/645cf761f60657f1a3bfd6de/646b7b76d5f40e5af959a61c_UK-favicon.png"
+      type="image/x-icon"
+    />
+    <title>Unknown® - Customer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <link rel="stylesheet" href="../../assets/css/main.css" />
   </head>
   <body>
-    CUSTOMER PAGE
+    <!-- <div class="loading" style="width: 100vw; height: 100vh; background-color: black;">
+      <h1 class="text-white">LOADING...</h1>
+    </div> -->
+    <div class="container main ">
+      <header class="container-padding">
+        <div class="logo">
+          <a href="/">UNKNOWN® <span>.</span></a>
+        </div>
+        <div class="right">
+          <i class="fa fa-shopping-cart"></i>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <section class="container introduction" id="home-section">
+        <div class="title-blog">
+          <h1 class="gsap-reveal-hero">UNKNOWN®<span class="dot">.</span> GIOI THIEU</h1>
+          <h2 class="gsap-reveal-hero">
+            Là một công ty đứng <b>top đầu</b> trong lĩnh vực bán lẻ điện thoại,
+            chúng tôi luôn đổi mới nhằm giúp người tiêu dùng có những trải
+            nghiệm mua hàng <b>tuyệt vời nhất</b>.
+          </h2>
+
+          <button class="gsap-reveal-hero">Xem thêm nhiều sản phẩm khác</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="container product" id="product">
+          <div class="item">
+            <div
+              href="/"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="1"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"
+                  ><i class="fa fa-link"></i
+                ></span>
+                <div class="portfolio-item-content">
+                  <h3>Obsessed Book</h3>
+                  <div>
+                    <p>$ 999</p>
+                    <button>Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                alt="Images"
+              />
+            </div>
+          </div>
+
+          <div class="item">
+            <a
+              href="portfolio-single-2.html"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="2"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Book Binding</h3>
+                  <p>illustration, application</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                style="height: 200px;"
+                class="lazyload img-fluid"
+                alt="Images"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              href="portfolio-single-3.html"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="3"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Fresh Fruits</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 400px;"
+                alt="Images"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              href="portfolio-single-3.html"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="3"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Powerful Speaker</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 100px;"
+                alt="Images"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              href="portfolio-single-3.html"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="3"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Wireless Headset</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 475px;"
+                alt="Images"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <div
+              href="/"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="1"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Black & White Cubic</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 150px;"
+                alt="Images"
+              />
+            </div>
+          </div>
+
+          <div class="item">
+            <a
+              href="portfolio-single-2.html"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="2"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Nike Shoe</h3>
+                  <p>illustration, application</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 500px;"
+                alt="Images"
+              />
+            </a>
+          </div>
+          <div class="item">
+            <div
+              href="/"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="1"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"
+                  ><i class="fa fa-link"></i
+                ></span>
+                <div class="portfolio-item-content">
+                  <h3>Obsessed Book</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 260px;"
+                alt="Images"
+              />
+            </div>
+          </div>
+
+          <div class="item">
+            <a
+              href="portfolio-single-2.html"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="2"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Book Binding</h3>
+                  <p>illustration, application</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 100px;"
+                alt="Images"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              href="portfolio-single-3.html"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="3"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Fresh Fruits</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                alt="Images"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              href="portfolio-single-3.html"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="3"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Powerful Speaker</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 400px;"
+                alt="Images"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              href="portfolio-single-3.html"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="3"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Wireless Headset</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 570px;"
+                alt="Images"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <div
+              href="/"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="1"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Black & White Cubic</h3>
+                  <p>web, branding</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 300px;"
+                alt="Images"
+              />
+            </div>
+          </div>
+
+          <div class="item">
+            <a
+              href="portfolio-single-2.html"
+              class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+              data-id="2"
+            >
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Nike Shoe</h3>
+                  <p>illustration, application</p>
+                </div>
+              </div>
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                class="lazyload img-fluid"
+                style="height: 400px;"
+                alt="Images"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container services">
+        <div class="title-blog">
+          <h1>UNKNOWN®<span>.</span> DICH VU</h1>
+          <h2>
+            Bằng cả hình thức <b>online/ offline</b>, khách hàng và đối tác của
+            chúng tôi luôn được cung cấp các <b>dịch vụ 24/24</b> như sau:
+          </h2>
+          <div class="wave">
+            <svg>
+              <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="services__list row">
+          <div
+            class="services__item col-6 col-sm-6 col-md-6 col-lg-4 mb-4 px-3"
+          >
+            <div
+              class="service d-flex flex-column align-items-center jus text-center"
+            >
+              <div class="mb-3">
+                <span class="icon-service"
+                  ><img
+                    src="../../assets/img/svg/service-icon-7.svg"
+                    alt="Image"
+                    class="img-fluid"
+                /></span>
+              </div>
+              <h3 class="">Marketing</h3>
+              <p class="">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+          <div class="services__item col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div
+              class="service d-flex flex-column align-items-center jus text-center"
+            >
+              <div class="mb-3">
+                <span class="icon-service"
+                  ><img
+                    src="../../assets/img/svg/service-icon-6.svg"
+                    alt="Image"
+                    class="img-fluid"
+                /></span>
+              </div>
+              <h3 class="">Photography</h3>
+              <p class="">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+
+          <div class="services__item col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div
+              class="service d-flex flex-column align-items-center jus text-center"
+            >
+              <div class="mb-3">
+                <span class="icon-service"
+                  ><img
+                    src="../../assets/img/svg/service-icon-1.svg"
+                    alt="Image"
+                    class="img-fluid"
+                /></span>
+              </div>
+              <h3 class="">Web Design</h3>
+              <p class="">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+
+          <div class="services__item col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div
+              class="service d-flex flex-column align-items-center jus text-center"
+            >
+              <div class="mb-3">
+                <span class="icon-service"
+                  ><img
+                    src="../../assets/img/svg/service-icon-8.svg"
+                    alt="Image"
+                    class="img-fluid"
+                /></span>
+              </div>
+              <h3 class="">App Development</h3>
+              <p class="">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+
+          <div class="services__item col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div
+              class="service d-flex flex-column align-items-center jus text-center"
+            >
+              <div class="mb-3">
+                <span class="icon-service"
+                  ><img
+                    src="../../assets/img/svg/service-icon-4.svg"
+                    alt="Image"
+                    class="img-fluid"
+                /></span>
+              </div>
+              <h3 class="">Search Ranking</h3>
+              <p class="">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+
+          <div class="services__item col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div
+              class="service d-flex flex-column align-items-center jus text-center"
+            >
+              <div class="mb-3">
+                <span class="icon-service"
+                  ><img
+                    src="../../assets/img/svg/service-icon-5.svg"
+                    alt="Image"
+                    class="img-fluid"
+                /></span>
+              </div>
+              <h3 class="">Branding</h3>
+              <p class="">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container skillset">
+        <div class="title-blog">
+          <h1>UNKNOWN®<span>.</span> KY NANG</h1>
+          <h2>
+            Lorem ipsum dolor, sit amet <b>consectetur</b> adipisicing elit.
+          </h2>
+          <div class="wave">
+            <svg>
+              <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="progressbar" data-animate="false">
+              <div value="50" max="100" class="circle" data-percent="98">
+                <div class="number"></div>
+                <p class="caption">WordPress</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="progressbar" data-animate="false">
+              <div value="50" max="100" class="circle" data-percent="08">
+                <div class="number"></div>
+                <p class="caption">WordPress</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="progressbar" data-animate="false">
+              <div value="50" max="100" class="circle" data-percent="80">
+                <div class="number"></div>
+                <p class="caption">WordPress</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="progressbar" data-animate="false">
+              <div value="50" max="100" class="circle" data-percent="28">
+                <div class="number"></div>
+                <p class="caption">WordPress</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="progressbar" data-animate="false">
+              <div value="50" max="100" class="circle" data-percent="99">
+                <div class="number"></div>
+                <p class="caption">WordPress</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="progressbar" data-animate="false">
+              <div value="50" max="100" class="circle" data-percent="20">
+                <div class="number"></div>
+                <p class="caption">WordPress</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container testimonials">
+        <div class="title-blog">
+          <h1>UNKNOWN®<span>.</span> CHUNG THUC</h1>
+          <h2>
+            Phản hồi, đánh giá, feedback của khách hàng sau khi đã
+            <b>trải nghiệm</b> và <b>sử dụng</b> sản phẩm, dịch vụ của chúng tôi
+          <div class="wave">
+            <svg>
+              <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="row testimonials__list">
+          <div class="testimonials__item col-sm-12 col-md-6 col-lg-4">
+            <div>
+              <img src="../../assets/img/images/person_1.jpg" alt="avatar">
+              <h5>David Ellison</h5>
+              <p>CEO & Co-Founder</p>
+              <blockquote>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</blockquote>
+            </div>
+          </div>
+          <div class="testimonials__item col-sm-12 col-md-6 col-lg-4">
+           <div>
+            <img src="../../assets/img/images/unnamed.jpg" alt="avatar">
+            <h5>Chris Le</h5>
+            <p>CEO & Co-Founder</p>
+            <blockquote>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</blockquote>
+           </div>
+          </div>
+          <div class="testimonials__item col-sm-12 col-md-6 col-lg-4">
+           <div>
+            <img src="../../assets/img/images/person_2.jpg" alt="avatar">
+            <h5>Jenny Wilson</h5>
+            <p>CEO & Co-Founder</p>
+            <blockquote>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</blockquote>
+           </div>
+          </div>
+          <div class="testimonials__item col-sm-12 col-md-6 col-lg-4">
+           <div> <img src="../../assets/img/images/person_3.jpg" alt="avatar">
+            <h5>Jenny Wilson</h5>
+            <p>CEO & Co-Founder</p>
+            <blockquote>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</blockquote></div>
+          </div>
+          <div class="testimonials__item col-sm-12 col-md-6 col-lg-4">
+           <div> <img src="../../assets/img/images/person_1.jpg" alt="avatar">
+            <h5>Jenny Wilson</h5>
+            <p>CEO & Co-Founder</p>
+            <blockquote>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</blockquote></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container blog">
+        <div class="title-blog">
+          <h1>UNKNOWN®<span>.</span> BLOG POST</h1>
+          <h2>
+            <b>Xu hướng</b> và <b>cập nhật</b>
+          <div class="wave">
+            <svg>
+              <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="row blog__list">
+          <div class="blog__item col-sm-12 col-md-6 col-lg-3">
+           <div>
+            <img src="https://static-images.vnncdn.net/files/publish/mau-samsung-galaxy-s23-8e142bb5e9a540779bfc2d7dfcd4b6ec.jpg" alt="samsmung photo">
+           </div>
+            <h6>Samsung giới thiệu về công nghệ màn hình không viền, sẽ trang bị cho iPhone trước?</h6>
+            <p class="text-muted">31/08/2023 by Huynh Qui</p>
+          </div>
+          <div class="blog__item col-sm-12 col-md-6 col-lg-3">
+            <div>
+              <img src="https://cdn.tgdd.vn/Files/2022/05/19/1433737/iphone-13-co-gi-noi-bat.jpg" alt="iPhone 14 series">
+            </div>
+            <h6>iPhone 14 series chỉ từ 19.19 triệu</h6>
+            <p class="text-muted">31/08/2023 by Huynh Qui</p>
+          </div>
+          <div class="blog__item col-sm-12 col-md-6 col-lg-3">
+           <div>
+            <img src="https://images2.thanhnien.vn/528068263637045248/2023/3/9/dt-1678345969873708525942.png" alt="xiaomi">
+           </div>
+            <h6>Giảm 8 triệu khi mua điện thoại mới nhất của Xiaomi</h6>
+            <p class="text-muted">31/08/2023 by Huynh Qui</p>
+          </div>
+          <div class="blog__item col-sm-12 col-md-6 col-lg-3">
+            <div>
+              <img src="https://images.macrumors.com/t/xPmlgTJw38cque-ZhvlX9Ls05HQ=/1200x1200/smart/article-new/2023/02/iphone-passcode-green.jpg" alt="password">
+            </div>
+            <h6>Cách hacker lấy mật khẩu của người dùng iPhone</h6>
+            <p class="text-muted">31/08/2023 by Huynh Qui</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container contact">
+        <div class="title-blog">
+          <h1>UNKNOWN®<span>.</span> LIEN HE</h1>
+          <h2>
+            Bạn đang muốn được <b>hỗ trợ</b> hay <b>ứng tuyển</b> vị trí ...
+          <div class="wave">
+            <svg>
+              <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="contact-wrapper row">
+          <div class="col-sm-12 col-lg-6">
+            <form>
+              <div class=" row">
+                <div class="form-group col-6">
+                  <input type="text" class="form-control" id="" placeholder="Họ" />
+                </div>
+                <div class="form-group col-6">
+                  <input type="text" class="form-control" id="" placeholder="Tên đệm và tên" />
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="" placeholder="Email của bạn" />
+              </div>
+              <div class="form-group">
+                <textarea type="text" rows="5" class="form-control" id="" placeholder="Lời nhắn"></textarea>
+              </div>
+              <button type="button">Gửi</button>
+            </form>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2496060063304!2d106.70018217525791!3d10.792184958902435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528b5ac6e061b%3A0x2bfcaeae495f415b!2zS2hvIGLhuqFjIE5ow6Agbsaw4bubYyBRdcOizKNuIDE!5e0!3m2!1svi!2s!4v1692433087289!5m2!1svi!2s" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+       <div>
+        <i>(*): Lỗi phần cứng từ phía nhà sản xuất</i> <br/>
+        <b>Điều kiện đổi trả:</b>  
+        <ul>
+          <li>● Máy: Như mới, không xước xát, không dán decal, hình trang trí</li>
+          <li>● Máy cũ: có tình trạng sản phẩm như lúc mới mua</li>
+          <li>● Hộp: Như mới, không móp méo, rách, vỡ, bị viết, vẽ, quấn băng dính, keo; có Serial/IMEI trên hộp trùng với thân máy.</li>
+          <li>● Phụ kiện và quà tặng: Còn đầy đủ, nguyên vẹn, không móp méo xước xát hoặc bị hư hại trong quá trình sử dụng.</li>
+          <li> ● Tài khoản: Máy đã đã được đăng xuất khỏi tất cả các tài khoản như: iCloud, Google Account, Mi Account…</li>
+        </ul>
+        <p> Các lỗi từ NSX cần được xác định bởi trung tâm bảo hành chính hãng hoặc trung tâm bảo hành uỷ quyền</p>
+        <i> (*) Lỗi từ phía Nhà sản xuất là các lỗi bao gồm: Lỗi nguồn, lỗi trên mainboard, ổ cứng, màn hình và các linh kiện phần cứng bên trong</i>
+        <p>Lỗi điểm chết màn hình : màn hình có từ 3 điểm chết trở lên hoặc 1 điểm chết có kích thước lớn hơn 1mm đối với điện thoại và từ 5 điểm chết trở lên đối với laptop, màn hình rời
+        </p>
+        <p class="m-0">Trường hợp đổi/ trả các sản phẩm xuất hoá đơn Công ty, Khách hàng vui lòng cung cấp Biên bản trả hàng và thu hồi hóa đơn hoặc Biên bản điều chỉnh giảm hóa đơn GTGT đầy đủ mộc tròn công ty và chữ ký người đại diện Pháp luật công ty. Trường hợp Khách hàng không cung cấp đầy đủ  các chứng từ trên, UNKNOWN® xin phép thu phí dịch vụ theo giá trị thuế suất VAT sản phẩm đổi trả.</p>
+       </div>
+        <p class="mb-0 mt-2 text-center">Copyright ©2023. All Rights Reserved. — Designed with love by <a target="_blank"  href="https://lehuynhqui.vercel.app/">huynhqui.com</a></p>
+      </footer>
+
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    
+    <script src="../../assets/js/jquery.animateNumber.min.js"></script>
+    <script src="../../assets/js/jquery.waypoints.min.js"></script>
+    <script src="../../assets/js/jquery.fancybox.min.js"></script>
+    <script src="../../assets/js/aos.js"></script>
+    <script src="../../assets/js/wave-animate.js"></script>
+    <script src="../../assets/js/circle-progress.js"></script>
+    <script src="../../assets/js/imagesloaded.pkgd.js"></script>
+    <script src="../../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../../assets/js/jquery.easing.1.3.js"></script>
+    <script src="../../assets/js/TweenMax.min.js"></script>
+    <script src="../../assets/js/ScrollMagic.min.js"></script>
+    <script src="../../assets/js/scrollmagic.animation.gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../../assets/js/custom.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.testimonials__list').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+          pauseOnHover: false,
+          zIndex:0
+        });
+      });
+    </script>
+    <script type="module" src="../services/main.js"></script>
   </body>
 </html>

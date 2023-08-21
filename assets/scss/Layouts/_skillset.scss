@@ -1,0 +1,18 @@
+.skillset {
+  .row {
+    .progressbar {
+      .circle {
+        position: relative;
+        .number {
+          position: absolute;
+          top: 30px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          line-height: 40px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

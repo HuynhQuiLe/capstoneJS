@@ -1,0 +1,24 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  .frame__line {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid $border-color;
+    // overflow: hidden;
+    .vertical-line {
+      height: 50px;
+      width: 100%;
+      border-bottom: 1px solid $border-color;
+    }
+    .horizontal-line {
+      height: 100%;
+      width: 65px;
+      border-right: 1px solid $border-color;
+      transform: translateY(-50px);
+    }
+  }
+}
