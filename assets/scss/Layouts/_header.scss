@@ -28,6 +28,22 @@ header {
     i {
       font-size: 20px;
       margin-right: 25px;
+      position: relative;
+      cursor: pointer;
+      p {
+        position: absolute;
+        font-size: 8px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $text-blue;
+        text-align: center;
+        line-height: 16px;
+        font-weight: bold;
+        color: $text-white;
+        top: -8px;
+        right: -8px;
+      }
     }
     div {
       width: 20px;
