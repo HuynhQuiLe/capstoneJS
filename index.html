@@ -341,6 +341,37 @@
       </div>
     </div>
 
+    <!-- menu -->
+    <div class="menu-main">
+      <ul>
+        <li>
+          <a href="#" onmouseenter="handleHover(event, 'home')">Home</a>
+        </li>
+        <li>
+          <a
+            href="./admin/views/index.html"
+            onmouseenter="handleHover(event, 'admin')"
+            >admin</a
+          >
+        </li>
+        <li>
+          <a
+            href="./customer/views/index.html"
+            onmouseenter="handleHover(event, 'customer')"
+            >customer</a
+          >
+        </li>
+        <li>
+          <a href="#" onmouseenter="handleHover(event, 'media')">media</a>
+        </li>
+        <li>
+          <a href="#" onmouseenter="handleHover(event, 'gallery')">gallery</a>
+        </li>
+        <li>
+          <a href="#" onmouseenter="handleHover(event, 'about')">about</a>
+        </li>
+      </ul>
+    </div>
     <!-- <div
       class="overlay absolute -top-[20px] -left-[20px] w-[100vw] bg-white opacity-80 z-[25] h-[100vh]"
     ></div> -->
@@ -378,7 +409,6 @@
         <button class="bg-gray-300" onclick="handleForceMusic()">OK</button>
       </div>
     </div>
-    <script src="./assets/js/loader.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -401,6 +431,8 @@
       };
     </script>
 
+    <!-- <script src="./assets/js/loader.js"></script> -->
+    <script src="./assets/js/setWidthForHackyText.js"></script>
     <script src="./assets/js/menuTonggle.js"></script>
     <script src="./assets/js/hackyText.js"></script>
     <script src="./assets/js/handleMusicIcon.js"></script>
