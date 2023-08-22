@@ -43,7 +43,12 @@
           <a href="/">UNKNOWN® <span>.</span></a>
         </div>
         <div class="right">
-          <i class="fa fa-shopping-cart"></i>
+          <i class="fa fa-shopping-cart" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl"
+            onclick="handleOpenCart()"
+          >
+
+            <p class="cart-number"></p>
+          </i>
           <div>
             <span></span>
             <span></span>
@@ -733,6 +738,144 @@
         <p class="mb-0 mt-2 text-center">Copyright ©2023. All Rights Reserved. — Designed with love by <a target="_blank"  href="https://lehuynhqui.vercel.app/">huynhqui.com</a></p>
       </footer>
 
+      <!-- CART MODAL -->
+      <div class="cart modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title m-0 p-0 row w-100 justify-content-between" id="exampleModalLabel">
+                <div class="title-blog m-0 p-0 col-8 w-100 text-left">
+                  <h1 class="m-0 w-100">UNKNOWN®<span class="dot">.</span>GIO HANG</h1>
+                </div>
+                <div class="title-blog m-0 py-0 col-4 text-left">
+                  <h1 class="m-0">UNKNOWN®<span class="dot">.</span>SUMMARY</h1>
+                </div>
+              </h5>
+            </div>
+            <div class="modal-body">
+              <div class="row m-0">
+                <div class="cart-show-item col-8 p-0">
+                  <div class="row m-0 align-items-center justify-content-center mb-3">
+                    <div class=" col-3 item-img">
+                      <img
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                    alt="gray-photo">
+                    </div>
+                    <div class="col-4 item-infor">
+                      <p class="mb-0">Iphone</p>
+                      <h6 class="font-weight-bold">Iphone 14 Pro Max Pro Max</h6>
+                    </div>
+                    <div class="col-2 item-adjust">
+                      <span class="minus">
+                        <i class="fa fa-minus"></i>
+                      </span>
+                      <span class="number">1</span>
+                      <span class="plus">
+                        <i class="fa fa-plus"></i>
+                      </span>
+                    </div>
+                    <div class="col-2 item-price">
+                      <span>$99</span>
+                    </div>
+                    <div class="col-1 item-delete">
+                      <i class="fa fa-times"></i>
+                    </div>
+                  </div>
+
+                  <div class="row m-0 align-items-center justify-content-center mb-3">
+                    <div class=" col-3 item-img">
+                      <img
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                    alt="gray-photo">
+                    </div>
+                    <div class="col-4 item-infor">
+                      <p class="mb-0">Iphone</p>
+                      <h6 class="font-weight-bold">Iphone 14 Pro Max Pro Max</h6>
+                    </div>
+                    <div class="col-2 item-adjust">
+                      <span class="minus">
+                        <i class="fa fa-minus"></i>
+                      </span>
+                      <span class="number">1</span>
+                      <span class="plus">
+                        <i class="fa fa-plus"></i>
+                      </span>
+                    </div>
+                    <div class="col-2 item-price">
+                      <span>$99</span>
+                    </div>
+                    <div class="col-1 item-delete">
+                      <i class="fa fa-times"></i>
+                    </div>
+                  </div>
+
+                  <div class="row m-0 align-items-center justify-content-center mb-3">
+                    <div class=" col-3 item-img">
+                      <img
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-pure-color-gray-background-simple-image_557015.jpg"
+                    alt="gray-photo">
+                    </div>
+                    <div class="col-4 item-infor">
+                      <p class="mb-0">Iphone</p>
+                      <h6 class="font-weight-bold">Iphone 14 Pro Max Pro Max</h6>
+                    </div>
+                    <div class="col-2 item-adjust">
+                      <span class="minus">
+                        <i class="fa fa-minus"></i>
+                      </span>
+                      <span class="number">1</span>
+                      <span class="plus">
+                        <i class="fa fa-plus"></i>
+                      </span>
+                    </div>
+                    <div class="col-2 item-price">
+                      <span>$99</span>
+                    </div>
+                    <div class="col-1 item-delete">
+                      <i class="fa fa-times"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="summury col-4 ">
+                  <div class="summury__top">
+                    <p>ITEMS <span class="summury__item-number">0</span></p>
+                    <p class="summury__item-price-only">$ 0</p>
+                  </div>
+                  <div class="summury__mid">
+                     <div class="form-group">
+                      <label for="">SHIPPING</label>
+                      <select class="form-control" name="" id="">
+                        <option>Tiêu chuẩn - vận chuyển - $5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="">MÃ KHUYẾN MÃI</label>
+                      <input type="text" class="form-control" id="" placeholder="Nhập mã khuyến mãi" />
+                    </div>
+                  </div>
+                  <div class="summury__line"></div>
+                  <div class="summury__bot">
+                    <p>TỔNG CỘNG</p>
+                    <p class="total">$ 0</p>
+                  </div>
+                </div>
+              </div> 
+              
+            </div>
+            <div class="modal-footer">
+             <div class="row w-100 justify-content-between m-0">
+              <div class="col-8 p-0"> 
+                <button type="button" class="btn btn-secondary py-2 rounded-sm" data-dismiss="modal">Đóng</button>
+              </div>
+              <div class="col-4">
+                <button type="button" class="btn btn-primary py-2 rounded-sm w-100">Mua</button>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
         
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -769,6 +912,8 @@
         });
       });
     </script>
+   
+    <script  type="module" src="../services/handleOpenCart.js"></script>
     <script type="module" src="../services/main.js"></script>
   </body>
 </html>

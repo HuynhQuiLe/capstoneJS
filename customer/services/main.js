@@ -1,4 +1,4 @@
-import { getAllProducts } from "../controllers/productControllers.js";
+import { getAllProducts, addCart } from "../controllers/productControllers.js";
 
 export const renderAllProducts = (products) => {
   let innerHTML = "";
@@ -17,8 +17,8 @@ export const renderAllProducts = (products) => {
               <h3>${product.name}</h3>
               <div>
                 <p>$${product.price}</p>
-                <button>Thêm vào giỏ hàng</button>
-              </div>
+                <button onclick="addCart(${product.id})">Thêm vào giỏ hàng</button>
+              </div>'
             </div>
           </div>
           <img
@@ -34,6 +34,24 @@ export const renderAllProducts = (products) => {
   document.querySelector("#product").innerHTML = innerHTML;
 };
 
-window.getAllProducts = getAllProducts;
+export const renderNumberCart = () => {
+  // get carts
+  const carts = JSON.parse(localStorage.getItem("carts"));
+  let number = 0;
 
+  if (!carts) {
+    number = 0;
+  } else {
+    carts.forEach((cart) => {
+      number += cart.quantity;
+    });
+  }
+
+  document.querySelector(".cart-number").innerText = number;
+};
+
+window.getAllProducts = getAllProducts;
+window.addCart = addCart;
 getAllProducts();
+
+renderNumberCart();
