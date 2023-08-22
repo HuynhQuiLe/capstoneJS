@@ -413,7 +413,6 @@ footer a {
   align-items: center;
   justify-content: center;
   color: black;
-  display: none;
 }
 .loader .progress {
   width: 87rem;
@@ -556,7 +555,7 @@ footer a {
   }
 }
 .side-menu {
-  z-index: 10;
+  z-index: 1;
 }
 .side-menu.active {
   left: 405px;
