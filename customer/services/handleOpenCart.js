@@ -1,7 +1,7 @@
 import { renderNumberCart } from "./main.js";
 
 const handleOpenCart = () => {
-  const carts = JSON.parse(localStorage.getItem("carts"));
+  const carts = JSON.parse(localStorage.getItem("carts")) || [];
   renderGioHang(carts);
   renderSummary(carts);
 };
