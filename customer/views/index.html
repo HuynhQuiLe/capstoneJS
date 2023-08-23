@@ -73,6 +73,14 @@
       </section>
 
       <section>
+        <div class="form-group " id="search">
+          <label for="type">Bộ lọc:</label>
+          <select class="form-control" name="type" onchange="handleFilter(event)" >
+            <option value="All">Tất cả</option>
+            <option value="Apple">Apple</option>
+            <option value="Samsung">Samsung</option>
+          </select>
+        </div>
         <div class="container product" id="product">
           <div class="item">
             <div
@@ -917,6 +925,7 @@
       });
     </script>
     <script type="module" src="../services/handleBuy.js"></script>
+    <script type="module" src="../services/handleFitter.js"></script>
     <script  type="module" src="../services/handleOpenCart.js"></script>
     <script type="module" src="../services/main.js"></script>
   </body>

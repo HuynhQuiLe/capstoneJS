@@ -791,4 +791,24 @@ footer a {
   100% {
     width: 0%;
   }
+}
+#search {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 0 10px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+#search label {
+  width: 110px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+#search select {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

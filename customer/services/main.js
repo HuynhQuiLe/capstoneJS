@@ -55,3 +55,9 @@ window.addCart = addCart;
 getAllProducts();
 
 renderNumberCart();
+
+// effect
+
+setTimeout(() => {
+  document.querySelector("#search").style.opacity = 1;
+}, 2500);
