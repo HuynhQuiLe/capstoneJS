@@ -1,6 +1,6 @@
 import { renderNumberCart } from "./main.js";
 
-const handleOpenCart = () => {
+export const handleOpenCart = () => {
   const carts = JSON.parse(localStorage.getItem("carts")) || [];
   renderGioHang(carts);
   renderSummary(carts);
