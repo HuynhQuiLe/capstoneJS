@@ -20,8 +20,8 @@ ul {
 
 @font-face {
   font-family: "Hexaframe CF";
-  src: url("HexaframeCF-Bold.eot");
-  src: local("Hexaframe CF Bold"), local("HexaframeCF-Bold"), url("HexaframeCF-Bold.eot?#iefix") format("embedded-opentype"), url("HexaframeCF-Bold.woff2") format("woff2"), url("HexaframeCF-Bold.woff") format("woff"), url("HexaframeCF-Bold.ttf") format("truetype");
+  src: url("../../fonts/hexaframe/HexaframeCF-Bold.eot");
+  src: local("Hexaframe CF Bold"), local("HexaframeCF-Bold"), url("../../fonts/hexaframe/HexaframeCF-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/hexaframe/HexaframeCF-Bold.woff2") format("woff2"), url("../../fonts/hexaframe/HexaframeCF-Bold.woff") format("woff"), url("../../fonts/hexaframe/HexaframeCF-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -29,28 +29,28 @@ ul {
 @font-face {
   font-family: "Whyte";
   src: url("../../fonts/ABCWheyte/Whyte-Regular.eot");
-  src: local("Whyte Regular"), local("Whyte-Regular"), url("Whyte-Regular.eot?#iefix") format("embedded-opentype"), url("Whyte-Regular.woff2") format("woff2"), url("Whyte-Regular.woff") format("woff"), url("Whyte-Regular.ttf") format("truetype");
+  src: local("Whyte Regular"), local("Whyte-Regular"), url("../../fonts/ABCWheyte/Whyte-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/ABCWheyte/Whyte-Regular.woff2") format("woff2"), url("../../fonts/ABCWheyte/Whyte-Regular.woff") format("woff"), url("../../fonts/ABCWheyte/Whyte-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Whyte";
-  src: url("Whyte-ExtraLight.eot");
-  src: local("Whyte ExtraLight"), local("Whyte-ExtraLight"), url("Whyte-ExtraLight.eot?#iefix") format("embedded-opentype"), url("Whyte-ExtraLight.woff2") format("woff2"), url("Whyte-ExtraLight.woff") format("woff"), url("Whyte-ExtraLight.ttf") format("truetype");
+  src: url("../../fonts/ABCWheyte/Whyte-ExtraLight.eot");
+  src: local("Whyte ExtraLight"), local("Whyte-ExtraLight"), url("../../fonts/ABCWheyte/Whyte-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../../fonts/ABCWheyte/Whyte-ExtraLight.woff2") format("woff2"), url("../../fonts/ABCWheyte/Whyte-ExtraLight.woff") format("woff"), url("../../fonts/ABCWheyte/Whyte-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "Whyte";
-  src: url("Whyte-Medium.eot");
-  src: local("Whyte Medium"), local("Whyte-Medium"), url("Whyte-Medium.eot?#iefix") format("embedded-opentype"), url("Whyte-Medium.woff2") format("woff2"), url("Whyte-Medium.woff") format("woff"), url("Whyte-Medium.ttf") format("truetype");
+  src: url("../../fonts/ABCWheyte/Whyte-Medium.eot");
+  src: local("Whyte Medium"), local("Whyte-Medium"), url("../../fonts/ABCWheyte/Whyte-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/ABCWheyte/Whyte-Medium.woff2") format("woff2"), url("../../fonts/ABCWheyte/Whyte-Medium.woff") format("woff"), url("../../fonts/ABCWheyte/Whyte-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Whyte";
-  src: url("Whyte-Thin.eot");
-  src: local("Whyte Thin"), local("Whyte-Thin"), url("Whyte-Thin.eot?#iefix") format("embedded-opentype"), url("Whyte-Thin.woff2") format("woff2"), url("Whyte-Thin.woff") format("woff"), url("Whyte-Thin.ttf") format("truetype");
+  src: url("../../fonts/ABCWheyte/Whyte-Thin.eot");
+  src: local("Whyte Thin"), local("Whyte-Thin"), url("../../fonts/ABCWheyte/Whyte-Thin.eot?#iefix") format("embedded-opentype"), url("../../fonts/ABCWheyte/Whyte-Thin.woff2") format("woff2"), url("../../fonts/ABCWheyte/Whyte-Thin.woff") format("woff"), url("../../fonts/ABCWheyte/Whyte-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
@@ -101,7 +101,7 @@ header {
   border-right: 1px solid rgb(239, 239, 239);
 }
 header .logo a {
-  font-family: "Hexaframe CF";
+  font-family: Hexaframe CF;
   color: #000;
 }
 header .logo a span {
@@ -147,7 +147,7 @@ header .right div span {
 }
 
 .introduction {
-  font-family: "Hexaframe CF";
+  font-family: Hexaframe CF;
 }
 .introduction span.dot {
   color: #0389ff;
@@ -161,7 +161,7 @@ header .right div span {
   margin-bottom: 10px;
 }
 .title-blog h1 {
-  font-family: "Hexaframe CF";
+  font-family: Hexaframe CF;
   color: #000 !important;
   font-size: 30px;
   margin: 20px 0;
@@ -791,4 +791,24 @@ footer a {
   100% {
     width: 0%;
   }
+}
+#search {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 0 10px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+#search label {
+  width: 110px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+#search select {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
