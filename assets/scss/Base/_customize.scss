@@ -1,16 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
+// @font-face {
+//   font-family: "Hexaframe CF";
+//   src: url("../../fonts/hexaframe/HexaframeCF-Bold.eot");
+//   src: local("Hexaframe CF Bold"), local("HexaframeCF-Bold"),
+//     url("../../fonts/hexaframe/HexaframeCF-Bold.eot?#iefix")
+//       format("embedded-opentype"),
+//     url("../../fonts/hexaframe/HexaframeCF-Bold.woff2") format("woff2"),
+//     url("../../fonts/hexaframe/HexaframeCF-Bold.woff") format("woff"),
+//     url("../../fonts/hexaframe/HexaframeCF-Bold.ttf") format("truetype");
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
 @font-face {
   font-family: "Hexaframe CF";
-  src: url("../../fonts/hexaframe/HexaframeCF-Bold.eot");
-  src: local("Hexaframe CF Bold"), local("HexaframeCF-Bold"),
-    url("../../fonts/hexaframe/HexaframeCF-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../fonts/hexaframe/HexaframeCF-Bold.woff2") format("woff2"),
-    url("../../fonts/hexaframe/HexaframeCF-Bold.woff") format("woff"),
-    url("../../fonts/hexaframe/HexaframeCF-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+  src: url("file/fontHexaframeCF-Bold.eot?") format("embedded-opentype"),
+    url("file/fontHexaframeCF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("file/fontHexaframeCF-Bold.woff2") format("woff2"),
+    url("file/fontHexaframeCF-Bold.woff") format("woff"),
+    url("file/fontHexaframeCF-Bold.ttf") format("truetype");
 }
 
 /* WHEY */
