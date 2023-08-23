@@ -20,7 +20,10 @@ ul {
 
 @font-face {
   font-family: "Hexaframe CF";
-  src: url("file/fontHexaframeCF-Bold.eot?") format("embedded-opentype"), url("file/fontHexaframeCF-Bold.eot?#iefix") format("embedded-opentype"), url("file/fontHexaframeCF-Bold.woff2") format("woff2"), url("file/fontHexaframeCF-Bold.woff") format("woff"), url("file/fontHexaframeCF-Bold.ttf") format("truetype");
+  src: url("../../fonts/hexaframe/HexaframeCF-Bold.eot");
+  src: local("Hexaframe CF Bold"), local("HexaframeCF-Bold"), url("../../fonts/hexaframe/HexaframeCF-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/hexaframe/HexaframeCF-Bold.woff2") format("woff2"), url("../../fonts/hexaframe/HexaframeCF-Bold.woff") format("woff"), url("../../fonts/hexaframe/HexaframeCF-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 /* WHEY */
 @font-face {
@@ -788,4 +791,24 @@ footer a {
   100% {
     width: 0%;
   }
+}
+#search {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 0 10px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+#search label {
+  width: 110px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+#search select {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
