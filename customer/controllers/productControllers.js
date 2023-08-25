@@ -37,10 +37,12 @@ export const addCart = (id) => {
     carts.push(addedProduct);
     localStorage.setItem("carts", JSON.stringify(carts));
     showAddSuccess();
+    $("#modalDetail").modal("hide");
   } else {
     carts[index].quantity += 1;
     localStorage.setItem("carts", JSON.stringify(carts));
     showAddSuccess();
+    $("#modalDetail").modal("hide");
   }
   renderNumberCart();
 };
