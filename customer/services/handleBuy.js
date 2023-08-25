@@ -3,7 +3,7 @@ import { renderNumberCart } from "./main.js";
 const handleBuy = () => {
   let carts = JSON.parse(localStorage.getItem("carts")) || [];
   if (!carts.length) {
-    showAlertEmpty();
+    showAlertEmpty("Giỏ hàng của bạn trống.");
   } else {
     carts = [];
     localStorage.setItem("carts", JSON.stringify(carts));
@@ -14,9 +14,9 @@ const handleBuy = () => {
   }
 };
 
-function showAlertEmpty() {
+export function showAlertEmpty(message) {
   Toastify({
-    text: "Giỏ hàng của bạn trống.",
+    text: message,
     duration: 3000,
     destination: "https://github.com/apvarun/toastify-js",
     newWindow: true,

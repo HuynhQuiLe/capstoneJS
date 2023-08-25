@@ -748,7 +748,7 @@
        </div>
         <p class="mb-0 mt-2 text-center">Copyright ©2023. All Rights Reserved. — Designed with love by <a target="_blank"  href="https://lehuynhqui.vercel.app/">huynhqui.com</a></p>
       </footer>
-
+      
       <!-- CART MODAL -->
       <div class="cart modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -888,6 +888,35 @@
         </div>
       </div>
         
+      <!-- PRODUCT DETAIL MODAL -->
+      <div class="modal fade" id="modalDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title m-0 p-0" id="exampleModalLabel">
+                <div class="title-blog m-0 p-0 w-100 text-left">
+                  <h1 class="m-0 w-100">UNKNOWN®<span class="dot">.</span>THONG TIN CHI TIET</h1>
+                </div>
+              </h5>
+            </div>
+            <div class="modal-body modal-body-detail">
+               
+              
+            </div>
+            <div class="modal-footer">
+             <div class="row w-100 justify-content-between m-0">
+              <div class="col-8 p-0"> 
+                <button type="button" class="btn btn-secondary py-2 rounded-sm" data-dismiss="modal">Đóng</button>
+              </div>
+              <div class="col-4 ">
+                <button type="button " class="btn btn-primary py-2 rounded-sm w-100 addData-cta">Thêm vào giỏ hàng</button>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -927,6 +956,7 @@
     <script type="module" src="../services/handleBuy.js"></script>
     <script type="module" src="../services/handleFitter.js"></script>
     <script  type="module" src="../services/handleOpenCart.js"></script>
+    <script  type="module" src="../services/handleWatchDetail.js"></script>
     <script type="module" src="../services/main.js"></script>
   </body>
 </html>

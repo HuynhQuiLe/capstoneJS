@@ -1,3 +1,4 @@
+import { showAlertEmpty } from "./handleBuy.js";
 import { renderNumberCart } from "./main.js";
 
 export const handleOpenCart = () => {
@@ -101,6 +102,7 @@ const removeFromCart = (index) => {
   localStorage.setItem("carts", JSON.stringify(carts));
   handleOpenCart();
   renderNumberCart();
+  showAlertEmpty("Xoá sản phẩm khỏi giỏ hàng thành công.");
 };
 
 window.handleOpenCart = handleOpenCart;
