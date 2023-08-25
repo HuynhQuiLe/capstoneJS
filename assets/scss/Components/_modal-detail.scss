@@ -1,0 +1,23 @@
+#modalDetail {
+  .modal-body {
+    img {
+      width: 100%;
+    }
+    .detail-info {
+      h3 {
+        color: $text-black;
+      }
+      p {
+        margin-bottom: 0;
+        &.price {
+          font-size: 18px;
+          color: $text-blue;
+          margin-bottom: 20px;
+        }
+      }
+      ol {
+        margin-left: 30px;
+      }
+    }
+  }
+}
