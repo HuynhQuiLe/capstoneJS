@@ -1,0 +1,30 @@
+// ----------------------------------------------
+// Card Style
+// ----------------------------------------------
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+}
+
+.card {
+    margin-bottom: 30px;
+    .card-price {
+      color: $black;
+    }
+}
+
+.card-hover {
+    transition: 0.2s ease-in;
+
+    &:hover {
+        transform: translate3d(0px, -5px, 0px);
+    }
+}
+.card-img-top {
+    width: 50%;
+    height: 50px;
+}
