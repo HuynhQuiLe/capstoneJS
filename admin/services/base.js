@@ -1,5 +1,5 @@
 import { getData } from "../controllers/dataControllers.js";
-import { handleEdit,handleUpdate } from "../controllers/dataControllers.js";
+import { handleEdit,handleUpdate, handleDelete } from "../controllers/dataControllers.js";
 export const renderData = (products) => {
     let innerHTML = "";
     products.map((product) => {
@@ -16,7 +16,7 @@ export const renderData = (products) => {
       <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" onclick="handleEdit(${product.id})">
             Edit
         </button>
-        <button type="button" class="btn btn-primary" >
+        <button type="button" class="btn btn-primary" onclick="handleDelete(${product.id})">
         Delete
       </button>
      </td>
@@ -30,4 +30,5 @@ window.getData = getData;
 window.renderData = renderData;
 window.handleEdit = handleEdit;
 window.handleUpdate = handleUpdate;
+window.handleDelete = handleDelete;
 getData()

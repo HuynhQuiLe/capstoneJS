@@ -13,7 +13,7 @@ export const getData = async () => {
     }
   };
 
-  export function handleEdit(id) {
+export function handleEdit(id) {
     axios({
       url: `https://61029c2e79ed6800174821f1.mockapi.io/api/capstoneJS/${id}`,
       method: "GET",
@@ -23,7 +23,18 @@ export const getData = async () => {
     })
     .catch(function (err) {
     });
-  }
+}
+
+export function handleDelete(id) {
+  axios.delete( `https://61029c2e79ed6800174821f1.mockapi.io/api/capstoneJS/${id}`)
+  .then(function (res) {
+    getData();
+    showDeleteSuccess();
+    renderData(res.data);
+  })
+  .catch(function (err) {
+  });
+}
 function showDataForm (data) {
     document.getElementById("Id").value = data.id;
     document.getElementById("backCamera").value = data.backCamera;
@@ -55,8 +66,41 @@ export function handleUpdate() {
   })
   .then(function (res) {
     getData();
+    showUpdateSuccess();
     renderData(res.data);
   })
   .catch(function (err) {
   });
+}
+function showUpdateSuccess() {
+  Toastify({
+    text: "Update Success",
+    duration: 3000,
+    destination: "https://github.com/apvarun/toastify-js",
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "left", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+    onClick: function () {}, // Callback after click
+  }).showToast();
+}
+function showDeleteSuccess() {
+  Toastify({
+    text: "Delete Success",
+    duration: 3000,
+    destination: "https://github.com/apvarun/toastify-js",
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "left", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+    onClick: function () {}, // Callback after click
+  }).showToast();
 }
