@@ -506,11 +506,21 @@ footer a {
 .loader .progress {
   width: 87rem;
 }
+@media screen and (max-width: 1422px) {
+  .loader .progress {
+    width: 90%;
+  }
+}
 .loader .progress .progress__bar {
   position: relative;
   width: 87rem;
   background: #e1e1e1;
   height: 0.1rem;
+}
+@media screen and (max-width: 1422px) {
+  .loader .progress .progress__bar {
+    width: 90%;
+  }
 }
 .loader .progress .progress__bar .progress__bar-overlay {
   content: "";
@@ -541,6 +551,11 @@ footer a {
 .loader .progress .progress__bottom .progress__bottom-left img {
   width: 15px;
   margin-right: 0.75rem;
+}
+@media screen and (max-width: 800px) {
+  .loader .progress .progress__bottom .progress__bottom-right {
+    display: none;
+  }
 }
 .loader .loading-audio-ring {
   position: absolute;
@@ -1115,4 +1130,38 @@ footer a {
 }
 #modalDetail .modal-body .detail-info ol {
   margin-left: 30px;
+}
+
+.main-content {
+  position: absolute;
+  width: calc(100vw - 105px);
+  height: calc(100vh - 90px);
+  top: 71px;
+  right: 20px;
+}
+.main-content .home-photo {
+  width: calc(100% - 2px);
+  margin: auto;
+}
+@media screen and (max-width: 495px) {
+  .main-content .home-photo {
+    display: none;
+  }
+}
+.main-content .resize,
+.main-content p {
+  display: none;
+}
+@media screen and (max-width: 495px) {
+  .main-content .resize,
+  .main-content p {
+    padding: 5px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .menu-main .res-hidden {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
