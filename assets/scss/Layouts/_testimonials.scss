@@ -6,8 +6,10 @@
       width: 100%;
       overflow: visible;
       .slick-track {
-        width: 100% !important;
         display: flex;
+        @media screen and (min-width: 576px) {
+          width: 100% !important;
+        }
       }
     }
 

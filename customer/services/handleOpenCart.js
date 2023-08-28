@@ -49,7 +49,7 @@ const renderGioHang = (carts) => {
   } else {
     innerHTML = `
     <div class="text-center">
-      <img style="width: 500px; margin: auto" src="https://img.freepik.com/premium-vector/no-data-concept-illustration_86047-488.jpg" alt="no data">
+      <img class="no-data" style="width: 500px; margin: auto" src="https://img.freepik.com/premium-vector/no-data-concept-illustration_86047-488.jpg" alt="no data">
     </div>`;
   }
 
@@ -71,6 +71,14 @@ const renderSummary = (carts) => {
     ? totalPriceItemOnly + 5
     : 0
   ).toLocaleString()}`;
+  if (document.querySelector(".total-responsive")) {
+    document.querySelector(
+      ".total-responsive"
+    ).innerText = `$${(totalPriceItemOnly
+      ? totalPriceItemOnly + 5
+      : 0
+    ).toLocaleString()}`;
+  }
 };
 
 const handleAdjustQuantity = (name, action) => {
@@ -102,7 +110,7 @@ const removeFromCart = (index) => {
   localStorage.setItem("carts", JSON.stringify(carts));
   handleOpenCart();
   renderNumberCart();
-  showAlertEmpty("Xoá sản phẩm khỏi giỏ hàng thành công.");
+  showAlertEmpty("Xoá giỏ hàng thành công.");
 };
 
 window.handleOpenCart = handleOpenCart;
