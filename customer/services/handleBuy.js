@@ -17,6 +17,7 @@ const handleBuy = () => {
 export function showAlertEmpty(message) {
   Toastify({
     text: message,
+    className: "info-toast",
     duration: 3000,
     destination: "https://github.com/apvarun/toastify-js",
     newWindow: true,

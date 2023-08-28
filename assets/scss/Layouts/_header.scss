@@ -13,12 +13,18 @@ header {
   backdrop-filter: saturate(180%) blur(5px);
   background: rgba(255, 255, 255, 0.8);
   @include border();
+  @media screen and (max-width: 1200px) {
+    border: none;
+  }
   .logo {
     a {
       @include fontHexa();
       color: $text-black;
       span {
         color: $text-blue;
+      }
+      @media screen and (max-width: 991px) {
+        font-size: 20px;
       }
     }
   }

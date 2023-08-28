@@ -1,4 +1,57 @@
 #modalDetail {
+  @media screen and (max-width: 991px) {
+    padding-left: 20px !important;
+    padding-right: 20px;
+    .modal-dialog {
+      max-width: unset;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 765px) {
+    .close-btn {
+      display: none;
+    }
+    .close {
+      display: block !important;
+      color: #000 !important;
+    }
+    .modal-footer {
+      .col-4 {
+        flex: unset;
+        max-width: unset;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .res-hidden {
+      display: none;
+    }
+    .modal-body-detail {
+      .row {
+        flex-direction: column;
+        .col-6 {
+          margin: auto;
+          max-width: unset;
+          flex: unset;
+        }
+      }
+    }
+  }
+
+  .close {
+    display: none;
+  }
+
   .modal-body {
     img {
       width: 100%;

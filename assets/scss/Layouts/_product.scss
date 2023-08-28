@@ -1,6 +1,12 @@
 .product {
   column-count: 3;
   column-gap: 0;
+  @media screen and (max-width: 991px) {
+    column-count: 2;
+  }
+  @media screen and (max-width: 767px) {
+    column-count: 1;
+  }
   .item {
     margin-bottom: 15px;
     padding: 0 10px;
