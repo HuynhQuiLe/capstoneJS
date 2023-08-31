@@ -266,6 +266,16 @@ button:focus {
          column-count: 1;
   }
 }
+@media screen and (max-width: 991px) {
+  .product {
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 767px) {
+  .product {
+    column-count: 1;
+  }
+}
 .product .item {
   margin-bottom: 15px;
   padding: 0 10px;
@@ -934,8 +944,12 @@ footer a {
 }
 @media screen and (max-width: 1200px) {
   .cart .modal-body .cart-show-item .item-img img {
+<<<<<<< HEAD
     -o-object-fit: cover;
        object-fit: cover;
+=======
+    object-fit: cover;
+>>>>>>> fix
   }
 }
 .cart .modal-body .cart-show-item .item-infor p {
