@@ -26,6 +26,10 @@
 .brand-logo {
   min-height: $header-height;
   padding: $sidebar-spacing-x;
+  background-color: $blue;
+}
+.logo-admin {
+  font-size: 20px;
 }
 
 .unlimited-access {
