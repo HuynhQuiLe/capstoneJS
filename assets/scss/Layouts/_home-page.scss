@@ -1,0 +1,30 @@
+.main-content {
+  position: absolute;
+  width: calc(100vw - 105px);
+  height: calc(100vh - 90px);
+  top: 71px;
+  right: 20px;
+  .home-photo {
+    width: calc(100% - 2px);
+    margin: auto;
+    @media screen and (max-width: 495px) {
+      display: none;
+    }
+  }
+  .resize,
+  p {
+    display: none;
+    @media screen and (max-width: 495px) {
+      padding: 5px;
+      display: block;
+    }
+  }
+}
+
+.menu-main {
+  .res-hidden {
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
+  }
+}

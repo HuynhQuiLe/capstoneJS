@@ -15949,4 +15949,8 @@ ul {
 }
 .timeline-widget .timeline-item .timeline-badge.badge-primary {
   border: 2px solid #5D87FF;
+}
+
+.input-error {
+  border: 1px solid red;
 }/*# sourceMappingURL=styles.css.map */

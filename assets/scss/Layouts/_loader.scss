@@ -13,11 +13,17 @@
   // display: none;
   .progress {
     width: 87rem;
+    @media screen and (max-width: 1422px) {
+      width: 90%;
+    }
     .progress__bar {
       position: relative;
       width: 87rem;
       background: #e1e1e1;
       height: 0.1rem;
+      @media screen and (max-width: 1422px) {
+        width: 90%;
+      }
       .progress__bar-overlay {
         content: "";
         width: 20%;
@@ -46,6 +52,11 @@
         img {
           width: 15px;
           margin-right: 0.75rem;
+        }
+      }
+      .progress__bottom-right {
+        @media screen and (max-width: 800px) {
+          display: none;
         }
       }
     }
